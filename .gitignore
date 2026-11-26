@@ -1,0 +1,24 @@
+# Keep proprietary binaries, raw captures, and secrets out of the repo
+*.bin
+*.img
+*.hex
+*.elf
+*.apk
+*.xapk
+*.ipa
+*.pcap
+*.pcapng
+*.btsnoop
+*.log.raw
+*.pem
+*.key
+.env
+secrets/
+dumps/
+
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
+.idea/
+__pycache__/
