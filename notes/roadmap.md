@@ -41,6 +41,5 @@ Control everything the E09 glasses can do from my MacBook with our own code; the
 
 ## Next steps
 
-1. Confirm whether the app updated the glasses' firmware (check the app's firmware/update page).
-2. Look at the FCC internal photos (2BF3Z-E09) in a browser to try to identify the chips.
-3. First read-only BLE session from the Mac (phone Bluetooth off): list services, ask battery and versions, hand-decode the replies, compare with what the app showed.
+1. (Optional) Try the FCC block diagram for chip names.
+2. First read-only BLE session from the Mac (phone Bluetooth off): list services, ask battery and versions, hand-decode the replies, compare with what the app showed.

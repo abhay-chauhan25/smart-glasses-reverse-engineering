@@ -2,8 +2,9 @@
 
 ## Waiting on me (the user)
 
-- [ ] **Did the app update the glasses' firmware?** (App shows BT V2.0.7 / ISP V2.3.6 now.)
-- [ ] Open https://fccid.io/2BF3Z-E09 → Internal Photos in a browser and screenshot any visible chip markings (our fetcher got blocked).
+- [x] Firmware: app says "latest version" (BT V2.0.7 / ISP V2.3.6). Whether setup updated it is unknown.
+- [x] FCC internal photos saved: JieLi chip confirmed, second chip unreadable.
+- [ ] Try downloading the FCC **Block Diagram** and **Operational Description** for 2BF3Z-E09 from fcc.gov (they'd name the chips).
 - [ ] Was an EYEVUE account created, or used without one?
 - [ ] Confirm on the glasses: which arm has the touch area, button, camera, charging port.
 - [x] App version: iOS v3.3.6

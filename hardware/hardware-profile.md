@@ -20,7 +20,7 @@ Last updated: 2026-11-26
 | ISP (camera chip) firmware | **V2.3.6** | Vendor app |
 | Hardware version | **V2** | Vendor app |
 | Vendor app | EYEVUE for **iOS v3.3.6** | User |
-| Firmware updated by the app? | ⏳ unknown | |
+| Firmware updated by the app? | App says "latest version" (2026-11-26). Unknown whether it updated during first setup, but nothing is pending | Vendor app |
 | Wi-Fi mode | ⏳ Hypothesis: AP mode at `192.168.169.1`, because the vendor app treats project codes containing "T" as AP units | Upstream static analysis |
 
 ### How our unit compares to the researched units
@@ -53,9 +53,23 @@ Our unit has a **different project code and newer Bluetooth firmware** than any 
 
 | Part | Best guess | Confidence | Source |
 |---|---|---|---|
-| Bluetooth/audio SoC | JieLi AC701N | Medium (for EyeVue generally, not our unit) | CyanBridge `EyevueUfw.kt` |
-| Camera / Wi-Fi SoC | Unknown | — | FCC internal photos exist but weren't viewable by our fetcher |
+| Bluetooth/audio SoC | JieLi (JL logo visible on the main board); AC701N per CyanBridge | **High** that a JieLi chip is present; medium that it's the AC701N (part number unreadable in the FCC photo) | FCC internal photos; CyanBridge `EyevueUfw.kt` |
+| Second main chip | Unidentified QFN next to the JieLi chip, no readable marking. Possibly the camera/Wi-Fi SoC (hypothesis) | Low | FCC internal photos |
 | Camera sensor | Unknown | — | |
+| Storage (8 GB) | Board edge has a metal part that looks like a **microSD socket** (hypothesis) | Low | FCC internal photos |
+
+### FCC internal photos (2BF3Z-E09, public exhibit 9389952)
+
+![Main board, FCC internal photos](fcc-main-board.jpg)
+
+*Cropped from the public FCC internal-photos exhibit for 2BF3Z-E09 (via fccid.io).*
+
+What they show:
+- **Everything lives in one temple arm**: main board near the hinge, a speaker roughly mid-arm, the battery in the arm, and a separate small USB-C board at the arm's tip. The other arm holds a second speaker and wiring.
+- **Main board** (~20 × 8 mm): two QFN chips (one JieLi), two marked antenna points, a "MIC" silkscreen, a ribbon-cable connector (likely the camera), and a metal can at the edge (likely microSD).
+- **Small separate board**: probably the button/touch or power board.
+- **Battery**: long thin Li-po cell, CE marked (300 mAh per the manual).
+- The FCC record lists a block diagram, schematics and operational description as "metadata only" on fccid.io. If they can be downloaded from fcc.gov directly, they would likely name the chips.
 
 ## Physical layout (from manual diagram, to be confirmed on the glasses)
 

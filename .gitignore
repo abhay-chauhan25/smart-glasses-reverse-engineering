@@ -37,3 +37,6 @@ captures/
 # Personal photos/screenshots (EXIF location, MAC address, serials)
 GlassesPhotos/
 *.HEIC
+
+# Saved third-party PDFs (keep local)
+/*.pdf
