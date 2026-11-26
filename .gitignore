@@ -22,3 +22,14 @@ dumps/
 .vscode/
 .idea/
 __pycache__/
+
+# Firmware containers and raw research captures
+*.ufw
+*.zip
+captures/
+*.ogg
+*.wav
+*.aac
+*.mp4
+*.mov
+.build/

@@ -1,6 +1,6 @@
 # Smart Glasses Reverse Engineering
 
-This repository documents my reverse engineering of [DEVICE NAME/MODEL] AI smart glasses. It is a documentation repo: notes, findings, and reference material, not a product or a finished tool.
+This repository documents my reverse engineering of the EYEVUE E09 AI smart glasses. It is a documentation repo: notes, findings, and reference material, not a product or a finished tool.
 
 ## Goals
 - Understand how the hardware is built (SoC, sensors, camera, audio, battery)
@@ -8,6 +8,14 @@ This repository documents my reverse engineering of [DEVICE NAME/MODEL] AI smart
 - Document communication protocols (BLE, Wi-Fi, cloud APIs)
 - Learn how the AI features work (voice, vision, data flow)
 - Share findings so others can build on them
+
+## Start here
+- `notes/roadmap.md`: plan and current status
+- `notes/audit-2026-11-26.md`: what existing research proves vs. guesses
+- `protocols/compatibility-matrix.md`: what works on my unit
+- `protocols/command-safety.md`: BLE commands sorted by risk
+
+Builds on prior public research, credited in `protocols/research-sources.md`.
 
 ## What's inside
 - `hardware/`: teardown photos, chip IDs, pinouts, schematics
