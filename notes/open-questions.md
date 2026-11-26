@@ -2,25 +2,30 @@
 
 ## Waiting on me (the user)
 
-- [ ] Vendor app: app version, firmware version shown, and **did it update the glasses' firmware** when I first connected?
-- [ ] Phone used for the vendor app: iPhone or Android? Spare Android available?
-- [ ] Photos of box, manual, and labels (serials hidden): FCC ID?
-- [ ] Physical layout and default gesture behavior (see `hardware/hardware-profile.md`).
+- [ ] **Did the app update the glasses' firmware?** (App shows BT V2.0.7 / ISP V2.3.6 now.)
+- [ ] Open https://fccid.io/2BF3Z-E09 → Internal Photos in a browser and screenshot any visible chip markings (our fetcher got blocked).
+- [ ] Was an EYEVUE account created, or used without one?
+- [ ] Confirm on the glasses: which arm has the touch area, button, camera, charging port.
+- [x] App version: iOS v3.3.6
+- [x] Phone: iPhone
+- [x] Box/manual photos: FCC ID 2BF3Z-E09, specs, controls (see `hardware/hardware-profile.md`)
 - [ ] Is Ghidra installed somewhere? (Not found on disk; the Ghidra MCP server refused connections.)
 
 ## Technical unknowns (answer with experiments)
 
-- Does the glasses' BLE accept a second connection while the phone app is connected? (Likely not: disconnect the phone first.)
+- Does the glasses' BLE accept a second connection while the iPhone app is connected? (Likely not: turn the iPhone's Bluetooth off first.)
+- Does a BLE connection keep the glasses awake, or do they still auto power-off after 3 minutes idle?
+- Does our unit (TK11, BT 2.0.7) speak the same protocol as the researched units (TK8, BT 1.1.9)?
+- Wi-Fi: AP mode at `192.168.169.1`? Same password?
 - Can the Mac use the glasses as a Bluetooth speaker? Simultaneously with the BLE mic stream?
-- Battery drain of: continuous mic stream, Wi-Fi hotspot, RTSP live video.
+- Battery drain of: continuous mic stream, Wi-Fi hotspot, RTSP live video (300 mAh battery is small).
 - Does RTSP decode on the Mac with ffmpeg? Latency?
-- Which gesture produces which BLE side effect?
+- Which gesture/button produces which BLE side effect? Does translation mode report taps to the app?
 - Does connecting our own BLE client stop the 6–7 s offline "Hi Luma" fallback mode?
-- Do the glasses need vendor-cloud activation for anything?
 - Camera/Wi-Fi chip identity. Does firmware have signature checks? Any recovery mode?
 
 ## Decisions for later
 
 - Are glasses photos allowed to go to Claude, or only the local model? (OMNIS currently sends only text to Claude.)
 - Buy a spare unit before any firmware experiments?
-- Phone platform for Phase 9.
+- Phone app (Phase 9) will be **iOS** (user has an iPhone): no Wi-Fi Direct, background limits. Our unit is probably AP-mode Wi-Fi, which iOS can join.

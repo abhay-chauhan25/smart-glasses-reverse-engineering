@@ -33,3 +33,7 @@ captures/
 *.mp4
 *.mov
 .build/
+
+# Personal photos/screenshots (EXIF location, MAC address, serials)
+GlassesPhotos/
+*.HEIC

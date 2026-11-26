@@ -27,6 +27,12 @@ Upstream work we build on. Pinned commits are the versions reviewed; record a ne
 | [pepebot-space/nisaetus](https://github.com/pepebot-space/nisaetus) | HeyCyan M02S/A02S |
 | [Iam5tillLearning/OpenSource-Ai-Glasses](https://github.com/Iam5tillLearning/OpenSource-Ai-Glasses) | Rockchip RV1106B open hardware (Apache-2.0) |
 
+## Regulatory
+
+| Source | Notes |
+|---|---|
+| [FCC ID 2BF3Z-E09](https://fccid.io/2BF3Z-E09) | Shenzhen Taiyang Technology Co., Ltd, granted 2026-06-15. BT + 2.4 GHz Wi-Fi b/g/n. Public exhibits: internal/external photos, BLE/BT/Wi-Fi test reports, user manual. Block diagram, schematics, operational description are confidential. Same grantee also filed 2BF3Z-E03 "Smart Glasses" (2025), a possible sibling model |
+
 ## Tools
 
 - LightBlue: free on the Mac App Store (macOS 13.3+), useful for manual BLE inspection.
